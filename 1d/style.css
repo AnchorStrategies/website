@@ -1,0 +1,76 @@
+:root {
+    --nr_pages: 4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.sidebyside {
+    position: relative;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.sidebyside:nth-of-type(2) {
+    background-color: green;
+}
+.sidebyside:nth-of-type(3) {
+    background-color: blue;
+}
+.sidebyside:nth-of-type(4) {
+    background-color:yellow;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.upanddown {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    display: block;
+}
+
+.upanddown:nth-of-type(2) {
+    background-color: #ffffff40;
+}
+
+.upanddown:nth-of-type(3) {
+    background-color: #ffffff80;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding: 10px 20px 10px 20px;
+    background-color: #222222bb;
+    color: white;
+    font-family: Arial;
+    width: 100%;
+    font-weight: 900;
+    font-size: 30px;
+    z-index: 99999;
+}
+
+nav a {
+    color: lightgray;
+    padding: 5px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin-right: 10px;
+}
