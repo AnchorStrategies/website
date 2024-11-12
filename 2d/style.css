@@ -10,7 +10,9 @@
 
 .sidebyside {
     position: relative;
-    background-color: red;
+    background-image: url("https://picsum.photos/800/400/?blur");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -19,13 +21,13 @@
     overflow-y: scroll;
 }
 .sidebyside:nth-of-type(2) {
-    background-color: green;
+    background-image: url("https://picsum.photos/800/401/?blur");
 }
 .sidebyside:nth-of-type(3) {
-    background-color: blue;
+    background-image: url("https://picsum.photos/800/402/?blur");
 }
 .sidebyside:nth-of-type(4) {
-    background-color:yellow;
+    background-image: url("https://picsum.photos/800/403/?blur");
 }
 
 .container {
@@ -44,6 +46,17 @@
     height: 100%;
     scroll-snap-align: start;
     display: block;
+    white-space: wrap;
+    font-size: 1rem;
+    padding-top: max(100px, 20%);
+    padding-inline: 5rem;
+}
+
+.center {
+	position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 }
 
 .upanddown:nth-of-type(2) {
@@ -56,9 +69,9 @@
 
 nav {
     position: fixed;
+    padding: 10px;
     top: 0;
-    padding: 10px 20px 10px 20px;
-    background-color: #222222bb;
+    background-color: rgba(20, 55, 234, 0.5);
     color: white;
     font-family: Arial;
     width: 100%;
@@ -68,9 +81,11 @@ nav {
 }
 
 nav a {
-    color: lightgray;
-    padding: 5px;
-    border: 2px solid lightgray;
-    border-radius: 5px;
-    margin-right: 10px;
+	color: black;
+    transition: background-color 0.5s;
+    padding: 10px;
+
 }
+nav a:hover {
+	background-color: darkgray;
+	transition: background-color 0.5s;
