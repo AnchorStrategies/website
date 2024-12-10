@@ -24,10 +24,10 @@
    background-color: #9DB7C4;
 }
 .sidebyside:nth-of-type(3) {
-    
+    background-color: #2292A7;
 }
 .sidebyside:nth-of-type(4) {
-    
+    background-color: #3F7FBF;
 }
 
 .image {
@@ -83,7 +83,7 @@ nav {
     top: 0;
     background-color: #335682;
     color: #FEFACB;
-    font-family: Crete;
+    font-family: Arial;
     width: 100%;
     font-weight: 900;
     font-size: 30px;
