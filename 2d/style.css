@@ -31,11 +31,13 @@
 }
 
 .image {
-    border-radius: 15%;
     display: inline;
-    width: min(60vh, 60vw);
-    height: auto;
-    aspect-ratio: 1 / 1;
+    width: 50vw;
+    height: 100vh;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+.image2, .image3 {
+    clip-path: polygon(100% 0, 0 100%, 0 0);
 }
 
 .container {
@@ -56,17 +58,32 @@
     display: block;
     white-space: wrap;
     font-size: 1.5rem;
-    padding-top: max(100px, 20%);
     padding-inline: 5rem;
+    overflow: auto;
 }
 
 .center {
 	position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    max-height: 100%;
+    width: 100%;
+}
+.center > div {
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .center {
+        flex-direction: column;
+    }
+    .image {
+        width: 100vw;
+        height: 50vh;
+    }
 }
 
 .upanddown:nth-of-type(1) {
@@ -100,3 +117,4 @@ nav a {
 nav a:hover {
 	background-color: #3F7FBF;
 	transition: background-color 0.5s;
+}
