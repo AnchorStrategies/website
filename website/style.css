@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+
 :root {
     --nr_pages: 4;
+    --navbar_height: 50px;
 }
 
 * {
@@ -30,16 +33,6 @@
     background-color: #3F7FBF;
 }
 
-.image {
-    display: inline;
-    width: 50vw;
-    height: 100vh;
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
-}
-.image2, .image3 {
-    clip-path: polygon(100% 0, 0 100%, 0 0);
-}
-
 .container {
     position: absolute;
     width: 100%;
@@ -59,21 +52,8 @@
     white-space: wrap;
     font-size: 1.5rem;
     padding-inline: 5rem;
+    padding-top: calc(var(--navbar_height) + 10px);
     overflow: auto;
-}
-
-.center {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    max-height: 100%;
-    width: 100%;
-}
-.center > div {
-    margin-top: 80px;
-    padding-bottom: 20px;
 }
 
 @media (max-width: 600px) {
@@ -83,6 +63,10 @@
     .image {
         width: 100vw;
         height: 50vh;
+    }
+    .frontpage_title {
+	    top: calc(var(--navbar_height) + 10px);
+	    bottom: unset;
     }
 }
 
@@ -102,19 +86,99 @@ nav {
     color: #FEFACB;
     font-family: Arial;
     width: 100%;
-    font-weight: 900;
-    font-size: 30px;
+    height: var(--navbar_height);
+    font-weight: 600;
+    font-size: calc(var(--navbar_height) / 2);
     z-index: 99999;
 }
 
 nav a {
     text-decoration: none;
-	color: inherit;
+    color: inherit;
     transition: background-color 0.5s;
-    padding: 10px;
+    padding: 5px;
 
 }
 nav a:hover {
 	background-color: #3F7FBF;
 	transition: background-color 0.5s;
+}
+
+nav .links {
+	float: right;
+}
+
+h3 {
+	font-family: "Crete Round", serif;
+  	font-weight: 200;
+  	font-style: normal;
+	color: #303030;
+}
+h1, h2 {
+	font-family: "Crete Round", serif;
+  	font-weight: 600;
+  	font-style: normal;
+}
+
+.frontpage_image {
+	background-color: black;
+	background-image: url("/img/frontpage.jpg");
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 60%;
+	height: 60%;
+	top: 20%;
+	left: 10%;
+}
+
+.frontpage_title {
+	background-color: white;
+        position: absolute;
+        width: 60%;
+        min-height: 60%;
+	height: auto;
+        bottom: min(10%, 5vw);
+        right: 10%;
+	padding: 5%;
+}
+
+#two {
+	background-image: url("img/about_background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#two .about {
+	font-size: 8vw;
+	background-color: white;
+	padding: 10px;
+	font-family: serif;
+	position: absolute;
+	top: 50%;
+	color: #5C4033;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.testimonials {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px; 
+}
+
+.testimonials h3 {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.testimonials p {
+	color: black;
+	font-size: 0.8em;
+}
+
+.contactform {
+       border: none;	
+	width: 100%;
+	height: 100%;
 }
