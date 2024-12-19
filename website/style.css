@@ -56,7 +56,7 @@
     overflow: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .center {
         flex-direction: column;
     }
@@ -66,7 +66,17 @@
     }
     .frontpage_title {
 	    top: calc(var(--navbar_height) + 10px);
-	    bottom: unset;
+	    width: 100% !important;
+	    left: 0 !important;
+	    right: 0 !important;
+	    bottom: unset !important;
+    }
+    .frontpage_image {
+	    width: 100% !important;
+	    left: 0 !important;
+	    right: 0 !important;
+	    bottom: 0 !important;
+	    height: 100% !important;
     }
 }
 
@@ -88,7 +98,7 @@ nav {
     width: 100%;
     height: var(--navbar_height);
     font-weight: 600;
-    font-size: calc(var(--navbar_height) / 2);
+    font-size: max(min(calc(var(--navbar_height) / 2), 4.5vw), 18px);
     z-index: 99999;
 }
 
