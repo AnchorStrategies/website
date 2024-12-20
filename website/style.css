@@ -93,6 +93,8 @@ nav {
     padding: 10px;
     top: 0;
     background-color: #335682;
+    background: linear-gradient(90deg, #FEFACB max(var(--navbar_height), 5%), #335682 50%);
+    border-bottom: 1px solid #335682;
     color: #FEFACB;
     font-family: Arial;
     width: 100%;
@@ -151,6 +153,7 @@ h1, h2 {
         bottom: min(10%, 5vw);
         right: 10%;
 	padding: 5%;
+	box-shadow: 5px 5px 13px 0px rgba(0,0,0,0.75);
 }
 
 #two {
