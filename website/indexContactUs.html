@@ -48,53 +48,39 @@
             <iframe style="background-color: #335682; padding: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5950.766125077861!2d-88.14157460437262!3d41.77695748501178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e57b1a20be70b%3A0x908b5249f4e7fe93!2s331%20N%20Sleight%20St%2C%20Naperville%2C%20IL%2060540!5e0!3m2!1sen!2sus!4v1750355512952!5m2!1sen!2sus" width="1150" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </center>
         <img style="width: 800px; height: 100px; margin-top: 30px; margin-left: 17%; border: 0px transparent;" src="images/whitespace.png" />
-        
-        <div style="background-color: #335682; float: left; margin-top: 20px; margin-left: 5%; padding: 70px;">
-            <br>
-            <h1 style="color: whitesmoke;">331 N Sleight St.</h1>
-            <h1 style="color: whitesmoke;">Naperville, IL 60540</h1>
-            <h1 style="color: whitesmoke;">______</h1>
-            <h1 style="color: whitesmoke;">Phone </h1>
-            <h1 style="color: whitesmoke;">+1 (630) 258-6191</h1>
-            <h1 style="color: whitesmoke;">Email</h1>
-            <h1 style="color: whitesmoke;">info@anchorstrategiesinc.com</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; background-color: #335682; padding: 50px 20px; max-width: 1200px; margin: 0 auto;">
+
+        <div style="flex: 1 1 400px; box-sizing: border-box; padding: 30px; color: whitesmoke;">
+            <h1>331 N Sleight St.</h1>
+            <h1>Naperville, IL 60540</h1>
+            <h1>______</h1>
+            <h1>Phone</h1>
+            <h1>+1 (630) 258-6191</h1>
+            <h1>Email</h1>
+            <h1>info@anchorstrategiesinc.com</h1>
         </div>
 
-        <div style="background-color: #335682; float: right; margin-top: 20px; margin-right: 5%; padding-left: 50px;padding-right: 50px;">
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <div style="flex: 1 1 400px; box-sizing: border-box; padding: 30px; color: whitesmoke;">
+            <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="865c381f-6e7a-4c47-bd13-a092492cdde7">
-            <br>
-            <div style="margin-right: 25%;">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-                <h3 style="color:whitesmoke;">First Name:</h3>
-                <input type="text" name="name" placeholder="First Name" required>
-                <br>
-                <br>
-                <h3 style="color:whitesmoke;">Last Name:</h3>
-                <input type="text" name="name" placeholder="Last Name" required>
-                <br>
-                <br>
-                <h3 style="color:whitesmoke;">Email:</h3>
-                <input type="text" name="name" placeholder="Email" required>
-                <br>
-                <br>
-                <h3 style="color:whitesmoke;">Message:</h3>
-                <input type="text" name="name" placeholder="Message" style="border-radius: 3px; width: 238px; height: 145px; border-color: whitesmoke;" required>
 
-                <button type="submit" style="width: 238px; height: 40px; background-color:#1E6166; color: whitesmoke;border-radius: 5px; margin-top: 15px; border-color: transparent;"><b>Send</b></button>
-            </div>
-            <br>
-        </form>
+            <label style="display: block; margin-bottom: 5px;">First Name:</label>
+            <input type="text" name="first_name" placeholder="First Name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label style="display: block; margin-bottom: 5px;">Last Name:</label>
+            <input type="text" name="last_name" placeholder="Last Name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label style="display: block; margin-bottom: 5px;">Email:</label>
+            <input type="text" name="email" placeholder="Email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label style="display: block; margin-bottom: 5px;">Message:</label>
+            <textarea name="message" rows="6" placeholder="Message" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"></textarea>
+
+            <button type="submit" style="width: 100%; height: 40px; background-color: #1E6166; color: whitesmoke; border: none; border-radius: 5px;"><b>Send</b></button>
+            </form>
+        </div>
+        </div>
+
 
         </div>
         <img style="width: 800px; height: 100px; margin-top: 20px; margin-left: 17%; border: 0px transparent;" src="images/whitespace.png" />
