@@ -114,3 +114,7 @@
 {
     padding-left: 20%; padding-top:5%; font-size: medium; letter-spacing: 2px;
 }
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
