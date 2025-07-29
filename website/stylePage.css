@@ -112,7 +112,7 @@
 }
 #listElement
 {
-    padding-left: 20%; padding-top:5%; font-size: medium; letter-spacing: 2px;
+    padding-left: 20%; text-indent: -5%; padding-top:5%; font-size: medium; letter-spacing: 2px;
 }
 .hangingindent {
   padding-left: 22px ;
